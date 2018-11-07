@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Rethink this!
 public static class GameManager{
 
     public static Transform spawnPoint;
