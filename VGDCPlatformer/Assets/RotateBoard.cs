@@ -24,20 +24,20 @@ public class RotateBoard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
-        float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
+        //float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
+        //float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
 
         //if (Input.GetButtonDown("Fire1"))
         //{
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit; //https://docs.unity3d.com/ScriptReference/RaycastHit.html
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+       // RaycastHit hit; //https://docs.unity3d.com/ScriptReference/RaycastHit.html
        // if (Physics.Raycast(ray,out hit))
            // {
                // if ((hit.collider.gameObject.name) == "Plane")
               //  {
                      if (Input.mousePosition != prev)
                     {
-                        Quaternion target = Quaternion.Euler(Input.mousePosition.x, 0, Input.mousePosition.z);
+                        Quaternion target = Quaternion.Euler(Input.mousePosition.y, 0, Input.mousePosition.x);
                         transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
                     }
                // }

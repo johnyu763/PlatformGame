@@ -4,18 +4,17 @@ using System.Collections;
 public class CameraController : MonoBehaviour
 {
 
-    public GameObject thing = GameObject.FindWithTag("ball");
+    public GameObject player;
 
     private Vector3 offset;
 
     void Start()
     {
-        //anim = GameObject.FindWithTag("Player").GetComponent<Animator>();
-        offset = transform.position - thing.transform.position;
+        offset = transform.position - player.transform.position;
     }
 
     void LateUpdate()
     {
-        transform.position = thing.transform.position + offset;
+        transform.position = player.transform.position + offset;
     }
 }
