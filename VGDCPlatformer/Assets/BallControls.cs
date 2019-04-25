@@ -13,6 +13,14 @@ public class BallControls : MonoBehaviour
         {
             Reset();
         }
+        else if (Input.GetKeyDown("d"))
+        {
+            Brake();
+        }
+        else if (Input.GetKeyDown("f"))
+        {
+            Quick();
+        }
     }
 
     private void Reset()
@@ -22,5 +30,15 @@ public class BallControls : MonoBehaviour
         player.GetComponent<Rigidbody>().angularVelocity = new Vector3(0.0f, 0.0f, 0.0f);
         board.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
         board.transform.rotation = Quaternion.identity;
+    }
+
+    private void Brake()
+    {
+        player.GetComponent<Rigidbody>().drag += 1;
+    }
+
+    private void Quick()
+    {
+        player.GetComponent<Rigidbody>().drag -= 1;
     }
 }
