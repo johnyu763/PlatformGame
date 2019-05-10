@@ -13,11 +13,11 @@ public class BallControls : MonoBehaviour
         {
             Reset();
         }
-        else if (Input.GetKeyDown("d"))
+        else if (Input.GetKeyDown("a"))
         {
             Brake();
         }
-        else if (Input.GetKeyDown("f"))
+        else if (Input.GetKeyDown("w"))
         {
             Quick();
         }

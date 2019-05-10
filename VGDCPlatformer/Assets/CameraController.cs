@@ -5,16 +5,21 @@ public class CameraController : MonoBehaviour
 {
 
     public GameObject player;
-
     private Vector3 offset;
+    private Rigidbody rb;
 
     void Start()
     {
-        offset = transform.position - player.transform.position;
+       offset = transform.position - player.transform.position;
+       rb = player.gameObject.GetComponent<Rigidbody>();
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
-        transform.position = player.transform.position + offset;
+       
+        Vector3 velocity = rb.velocity;
+        float angle = Mathf.Atan2(velocity.x, velocity.z);
+        transform.rotation = Quaternion.Euler(transform.localEulerAngles.x, Mathf.Rad2Deg * angle, transform.localEulerAngles.z);
+       transform.position = player.transform.position + offset;
     }
 }
