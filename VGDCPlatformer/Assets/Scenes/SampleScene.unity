@@ -362,13 +362,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.20193262, y: 0, z: 0, w: 0.97939944}
-  m_LocalPosition: {x: -7.7, y: 18.63, z: -7.1}
+  m_LocalRotation: {x: 0.6670297, y: -0, z: -0, w: 0.74503124}
+  m_LocalPosition: {x: -7.7, y: 242.6, z: 89.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 23.3, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 83.677, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 359cb7cb65c19524e88ec8d08acef304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thing: {fileID: 1003283603}
+  player: {fileID: 0}
 --- !u!1 &1003283603
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003283603}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 69f05f703e8eb2840a40e9a857db70e0, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
