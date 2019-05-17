@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44782412, g: 0.49781078, b: 0.57543933, a: 1}
+  m_IndirectSpecularColor: {r: 0.4478246, g: 0.49781162, b: 0.57544035, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 64673962}
+  board: {fileID: 0}
 --- !u!4 &839302300
 Transform:
   m_ObjectHideFlags: 0
@@ -675,5 +676,10 @@ PrefabInstance:
       propertyPath: board
       value: 
       objectReference: {fileID: 1950125980}
+    - target: {fileID: 2508072080937987216, guid: 75f0c920fdc5a984fb4e1ebe5740768b,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75f0c920fdc5a984fb4e1ebe5740768b, type: 3}
