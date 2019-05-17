@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 359cb7cb65c19524e88ec8d08acef304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thing: {fileID: 1003283603}
+  player: {fileID: 0}
 --- !u!1 &1003283603
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003283603}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 69f05f703e8eb2840a40e9a857db70e0, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
