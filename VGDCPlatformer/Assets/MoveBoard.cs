@@ -17,7 +17,7 @@ public class MoveBoard : MonoBehaviour
 
         if (newX != startX && newY != startY)
         {
-            board.transform.Rotate(newY, 0, -newX);
+            board.transform.Rotate(-newY, newX, 0);
         }
     }
 }
