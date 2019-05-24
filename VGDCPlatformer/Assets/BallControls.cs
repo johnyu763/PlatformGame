@@ -5,7 +5,6 @@ using UnityEngine;
 public class BallControls : MonoBehaviour
 {
     public GameObject player;
-    public GameObject board;
 
     void Update()
     {
@@ -25,11 +24,10 @@ public class BallControls : MonoBehaviour
 
     private void Reset()
     {
-        player.transform.position = new Vector3(0.0f, 30.0f, 0.0f);
+        player.transform.position = new Vector3(-4.5f, 5, 4.5f);
+        player.transform.rotation = Quaternion.identity;
         player.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
         player.GetComponent<Rigidbody>().angularVelocity = new Vector3(0.0f, 0.0f, 0.0f);
-        board.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
-        board.transform.rotation = Quaternion.identity;
     }
 
     private void Brake()
