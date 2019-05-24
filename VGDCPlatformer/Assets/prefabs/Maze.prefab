@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 11400000}
+  - component: {fileID: 9215189653923842637}
   m_Layer: 0
   m_Name: Maze
   m_TagString: Untagged
@@ -50,3 +51,17 @@ MonoBehaviour:
   generationStepDelay: 0.01
   passagePrefab: {fileID: 11400000, guid: 4db582300649e4e399ee4a2665f9e8e6, type: 3}
   wallPrefab: {fileID: 11400000, guid: 2970089c471ef4c599835c1992954af5, type: 3}
+  finishSpawning: 0
+--- !u!114 &9215189653923842637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc692e29cf3bc44dbb1ac5ddc70e614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  board: {fileID: 100000}

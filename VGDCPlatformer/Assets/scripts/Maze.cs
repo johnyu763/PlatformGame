@@ -13,7 +13,8 @@ public class Maze : MonoBehaviour {
 	public MazePassage passagePrefab;
 	public MazeWall wallPrefab;
 
-	private MazeCell[,] cells;
+	public MazeCell[,] cells;
+    public bool finishSpawning = false;
 
 	public IntVector2 RandomCoordinates {
 		get {
@@ -38,7 +39,10 @@ public class Maze : MonoBehaviour {
 			yield return delay;
 			DoNextGenerationStep(activeCells);
 		}
-	}
+        finishSpawning = true;
+        GameObject ball = (GameObject) Instantiate(Resources.Load("Actual Ball We Should use"), new Vector3(-4.5f, 10, 4.5f), Quaternion.identity);
+        ball.transform.parent = this.gameObject.transform;
+    }
 
 	private void DoFirstGenerationStep (List<MazeCell> activeCells) {
 		activeCells.Add(CreateCell(RandomCoordinates));
