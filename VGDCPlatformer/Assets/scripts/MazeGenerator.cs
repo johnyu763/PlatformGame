@@ -8,7 +8,7 @@ public class MazeGenerator : MonoBehaviour
 
     private Maze mazeInstance;
 
-    private void Start()
+    private void Awake()
     {
         BeginGame();
     }
@@ -25,6 +25,8 @@ public class MazeGenerator : MonoBehaviour
     {
         mazeInstance = Instantiate(mazePrefab) as Maze;
         StartCoroutine(mazeInstance.Generate());
+        //Instantiate(Resources.Load("Actual Ball We Should use"), new Vector3(-9.5f, 200, 9.5f), Quaternion.identity);
+        //-9.5,0,9.5
     }
 
     private void RestartGame()
